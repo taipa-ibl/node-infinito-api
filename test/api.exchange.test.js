@@ -83,6 +83,16 @@ describe('api.exchange', async() => {
       res.should.have.property('data');      
     });
   });
+
+  /** ************************* get min amount *******************************/
+  describe('#getMaxAmount', async() => {
+    it('', async() => {
+      let res = await exchangeAPI.getMaxAmount('changelly', 'dai', 'bat');
+      // console.log(res);      
+      res.should.have.property('data');      
+    });
+  });
+
   /** ************************* broadcast raw *******************************/
   describe('#broadcastTransaction', async() => {
     it('', async() => {

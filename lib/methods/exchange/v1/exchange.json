@@ -2,9 +2,12 @@
   {
     "name": "getCurrencies",
     "method": "GET",
-    "url": "/exchange/v1/currencies?symbol={symbol}&offset={offset}&limit={limit}",
+    "url": "/exchange/v1/currencies?symbol={symbol}&platform={platform}&address={address}&provider={provider}&offset={offset}&limit={limit}",
     "params": [
       "symbol",
+      "platform",
+      "address",
+      "provider",
       "offset",
       "limit"
     ]
@@ -12,8 +15,11 @@
   {
     "name": "getTransactions",
     "method": "GET",
-    "url": "/exchange/v1/transactions?offset={offset}&limit={limit}",
+    "url": "/exchange/v1/transactions?affiliate_id={affiliate_id}&provider={provider}&address={address}&offset={offset}&limit={limit}",
     "params": [
+      "affiliate_id",
+      "provider",
+      "address",
       "offset",
       "limit"
     ]
@@ -36,17 +42,28 @@
   {
     "name": "estimateTransaction",
     "method": "GET",
-    "url": "/exchange/v1/transactions/estimate?from={from}&to={to}&amount={amount}",
+    "url": "/exchange/v1/transactions/estimate?from={from}&to={to}&amount={amount}&providers={providers}",
     "params": [
       "from",
       "to",
-      "amount"
+      "amount",
+      "providers"
     ]
   },
   {
     "name": "getMinAmount",
     "method": "GET",
     "url": "/exchange/v1/transactions/min-amount?provider={provider}&from={from}&to={to}",
+    "params": [
+      "provider",
+      "from",
+      "to"
+    ]
+  },
+  {
+    "name": "getMaxAmount",
+    "method": "GET",
+    "url": "/exchange/v1/transactions/max-amount?provider={provider}&from={from}&to={to}",
     "params": [
       "provider",
       "from",
