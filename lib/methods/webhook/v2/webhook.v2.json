@@ -1,0 +1,57 @@
+[
+  {
+    "name": "getWebhookEvents",
+    "method": "GET",
+    "url": "/webhook/v2/events",
+    "params": [
+    ]
+  },
+  {
+    "name": "getUserWebhookEvent",
+    "method": "GET",
+    "url": "/webhook/v2/events/{user_event_id}",
+    "params": [
+      "user_event_id"
+    ]
+  },
+  {
+    "name": "deleteAddrsOfUserEvent",
+    "method": "DELETE",
+    "url": "/webhook/v2/events/{user_event_id}/addresses",
+    "params": [
+      "user_event_id"
+    ]
+  },
+  {
+    "name": "addAddrsOfUserEvent",
+    "method": "POST",
+    "url": "/webhook/v2/events/{user_event_id}/addresses",
+    "params": [
+      "user_event_id"
+    ]
+  },
+  {
+    "name": "getAddrsOfUserEvent",
+    "method": "GET",
+    "url": "/webhook/v2/events/{user_event_id}/addresses",
+    "params": [
+      "user_event_id"
+    ]
+  },
+  {
+    "name": "stopUserEvent",
+    "method": "POST",
+    "url": "/webhook/v2/events/{user_event_id}/stop",
+    "params": [
+      "user_event_id"
+    ]
+  },
+  {
+    "name": "startUserEvent",
+    "method": "POST",
+    "url": "/webhook/v2/events/{user_event_id}/start",
+    "params": [
+      "user_event_id"
+    ]
+  }
+]
