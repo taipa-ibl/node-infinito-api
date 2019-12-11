@@ -1,0 +1,179 @@
+[
+  {
+    "name": "sync",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/sync",
+    "params": []
+  },
+  {
+    "name": "getAddressInfo",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/{addr}/info",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "getBalance",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/addr/{addr}/balance",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "getBlockByBlockHeight",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/block/{blockHeight}",
+    "params": [
+      "blockHeight"
+    ]
+  },
+  {
+    "name": "getTransaction",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/tx/{txId}",
+    "params": [
+      "txid"
+    ]
+  },
+  {
+    "name": "getDelegations",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/addr/{addr}/delegations",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "getRewards",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/addr/{addr}/rewards",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "getListDelegationsOfDelegator",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/stake/delegators/{delegatorAddr}/delegations",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "getDelegationsByValidatorOfDelegator",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/stake/delegators/{delegatorAddr}/delegations/{validatorAddr}",
+    "params": [
+      "delegatorAddr",
+      "validatorAddr"
+    ]
+  },
+  {
+    "name": "getUnbondingDelegationsOfDelegator",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/stake/delegators/{delegatorAddr}/unbonding-delegations",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "getUnbondingDelegationsByValidatorOfDelegator",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/stake/delegators/{delegatorAddr}/unbonding-delegations/{validatorAddr}",
+    "params": [
+      "delegatorAddr",
+      "validatorAddr"
+    ]
+  },
+  {
+    "name": "getRedelegationsOfDelegator",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/stake/delegators/{delegatorAddr}/redelegations",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "getListValidatorsOfDelegator",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/stake/delegators/{delegatorAddr}/validators",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "getValidatorOfDelegator",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/stake/delegators/{delegatorAddr}/validators/{validatorAddr}",
+    "params": [
+      "delegatorAddr",
+      "validatorAddr"
+    ]
+  },
+  {
+    "name": "getTransactionsStakingOfDelegator",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/stake/delegators/{delegatorAddr}/txs",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "getListValidators",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/stake/validators",
+    "params": []
+  },
+  {
+    "name": "getValidator",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/stake/validators/{validatorAddr}",
+    "params": [
+      "validatorAddr"
+    ]
+  },
+  {
+    "name": "getDelegationsOfValidator",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/stake/validators/{validatorAddr}/delegations",
+    "params": [
+      "validatorAddr"
+    ]
+  },
+  {
+    "name": "getUnbondingDelegationsOfValidator",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/stake/validators/{validatorAddr}/unbonding-delegations",
+    "params": [
+      "validatorAddr"
+    ]
+  },
+  {
+    "name": "getRedelegationsOfValidator",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/stake/validators/{validatorAddr}/redelegations",
+    "params": [
+      "validatorAddr"
+    ]
+  },
+  {
+    "name": "getStakingPool",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/stake/pool",
+    "params": []
+  },
+  {
+    "name": "getStakingParameters",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/stake/parameters",
+    "params": []
+  },
+  {
+    "name": "sendTransaction",
+    "method": "POST",
+    "url": "/chains/v1/IRIS/tx/send",
+    "params": []
+  }
+]

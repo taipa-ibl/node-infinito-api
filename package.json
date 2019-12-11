@@ -1,6 +1,6 @@
 {
   "name": "node-infinito-api",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Infinito Multichain API",
   "main": "./index.js",
   "scripts": {
@@ -50,7 +50,7 @@
     "watchify": "^3.11.1"
   },
   "dependencies": {
-    "node-infinito-util": "^1.0.3",
+    "node-infinito-util": "^1.0.2",
     "string-template": "^1.0.0"
   }
 }

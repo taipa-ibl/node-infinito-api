@@ -1,0 +1,169 @@
+[
+  {
+    "name": "sync",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/sync",
+    "params": []
+  },
+  {
+    "name": "getAddressInfo",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/{addr}/info",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "getBalance",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/addr/{addr}/balance",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "getBlockByBlockHeight",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/block/{blockHeight}",
+    "params": [
+      "blockHeight"
+    ]
+  },
+  {
+    "name": "getTransaction",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/tx/{txId}",
+    "params": [
+      "txid"
+    ]
+  },
+  {
+    "name": "getDelegations",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/addr/{addr}/delegations",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "getRewards",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/addr/{addr}/rewards",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "getListDelegationsOfDelegator",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/staking/delegators/{delegatorAddr}/delegations",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "getDelegationsByValidatorOfDelegator",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/staking/delegators/{delegatorAddr}/delegations/{validatorAddr}",
+    "params": [
+      "delegatorAddr",
+      "validatorAddr"
+    ]
+  },
+  {
+    "name": "getUnbondingDelegationsOfDelegator",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/staking/delegators/{delegatorAddr}/unbonding_delegations",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "getUnbondingDelegationsByValidatorOfDelegator",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/staking/delegators/{delegatorAddr}/unbonding_delegations/{validatorAddr}",
+    "params": [
+      "delegatorAddr",
+      "validatorAddr"
+    ]
+  },
+  {
+    "name": "getRedelegations",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/staking/redelegations",
+    "params": []
+  },
+  {
+    "name": "getListValidatorsOfDelegator",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/staking/delegators/{delegatorAddr}/validators",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "getValidatorOfDelegator",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/staking/delegators/{delegatorAddr}/validators/{validatorAddr}",
+    "params": [
+      "delegatorAddr",
+      "validatorAddr"
+    ]
+  },
+  {
+    "name": "getTransactionsStakingOfDelegator",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/staking/delegators/{delegatorAddr}/txs",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "getListValidators",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/staking/validators",
+    "params": []
+  },
+  {
+    "name": "getValidator",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/staking/validators/{validatorAddr}",
+    "params": [
+      "validatorAddr"
+    ]
+  },
+  {
+    "name": "getDelegationsOfValidator",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/staking/validators/{validatorAddr}/delegations",
+    "params": [
+      "validatorAddr"
+    ]
+  },
+  {
+    "name": "getUnbondingDelegationsOfValidator",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/staking/validators/{validatorAddr}/unbonding_delegations",
+    "params": [
+      "validatorAddr"
+    ]
+  },
+  {
+    "name": "getStakingPool",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/staking/pool",
+    "params": []
+  },
+  {
+    "name": "getStakingParameters",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/staking/parameters",
+    "params": []
+  },
+  {
+    "name": "sendTransaction",
+    "method": "POST",
+    "url": "/chains/v1/ATOM/tx/send",
+    "params": []
+  }
+]

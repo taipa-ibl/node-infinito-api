@@ -1,0 +1,118 @@
+[{
+    "name": "getBalance",
+    "method": "GET",
+    "url": "/chains/v1/TRX/addr/{addr}/balance",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "getTrc10Balance",
+    "method": "GET",
+    "url": "/chains/v1/TRX/addr/{addr}/balance?asset={asset}",
+    "params": [
+      "addr",
+      "asset"
+    ]
+  },
+  {
+    "name": "getTrc20Balance",
+    "method": "GET",
+    "url": "/chains/v1/TRX/trc20/balance?addr={addr}&contract={contract}&owner={owner}",
+    "params": [
+      "addr",
+      "contract",
+      "owner"
+    ]
+  },
+  {
+    "name": "getResource",
+    "method": "GET",
+    "url": "/chains/v1/TRX/addr/{addr}/resource",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "isActive",
+    "method": "GET",
+    "url": "/chains/v1/TRX/addr/{addr}/isactive",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "getTrxHistory",
+    "method": "GET",
+    "url": "/chains/v1/TRX/addr/{addr}/txs?offset={offset}&limit={limit}",
+    "params": [
+      "addr",
+      "offset",
+      "limit"
+    ]
+  },
+  {
+    "name": "getTrc10History",
+    "method": "GET",
+    "url": "/chains/v1/TRX/trc10/txs?address={addr}&asset={asset}&offset={offset}&limit={limit}",
+    "params": [
+      "addr",
+      "asset",
+      "offset",
+      "limit"
+    ]
+  },
+  {
+    "name": "getTrc20History",
+    "method": "GET",
+    "url": "/chains/v1/TRX/trc20/txs?address={addr}&contract={contract}&offset={offset}&limit={limit}",
+    "params": [
+      "addr",
+      "contract",
+      "offset",
+      "limit"
+    ]
+  },
+  {
+    "name": "getLatestBlock",
+    "method": "GET",
+    "url": "/chains/v1/TRX/sync",
+    "params": []
+  },
+  {
+    "name": "getBlockInfo",
+    "method": "GET",
+    "url": "/chains/v1/TRX/block/{blockIdOrNum}",
+    "params": [
+      "blockIdOrNum"
+    ]
+  },
+  {
+    "name": "sendTransaction",
+    "method": "POST",
+    "url": "/chains/v1/TRX/tx/send",
+    "params": []
+  },
+  {
+    "name": "searchTrc10",
+    "method": "GET",
+    "url": "/chains/v1/TRX/contract?type={type}&keyword={keyword}&offset={offset}&limit={limit}",
+    "params": [
+      "type",
+      "keyword",
+      "offset",
+      "limit"
+    ]
+  },
+  {
+    "name": "searchTrc20",
+    "method": "GET",
+    "url": "/chains/v1/TRX/contracttrc20?type={type}&keyword={keyword}&offset={offset}&limit={limit}",
+    "params": [
+      "type",
+      "keyword",
+      "offset",
+      "limit"
+    ]
+  }
+]
