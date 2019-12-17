@@ -38,22 +38,6 @@
     ]
   },
   {
-    "name": "getDelegations",
-    "method": "GET",
-    "url": "/chains/v1/IRIS/addr/{addr}/delegations",
-    "params": [
-      "addr"
-    ]
-  },
-  {
-    "name": "getRewards",
-    "method": "GET",
-    "url": "/chains/v1/IRIS/addr/{addr}/rewards",
-    "params": [
-      "addr"
-    ]
-  },
-  {
     "name": "getListDelegationsOfDelegator",
     "method": "GET",
     "url": "/chains/v1/IRIS/stake/delegators/{delegatorAddr}/delegations",
@@ -175,5 +159,61 @@
     "method": "POST",
     "url": "/chains/v1/IRIS/tx/send",
     "params": []
+  },
+  {
+    "name": "delegation",
+    "method": "POST",
+    "url": "/chains/v1/IRIS/stake/delegators/{delegatorAddr}/delegations",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "redelegation",
+    "method": "POST",
+    "url": "/chains/v1/IRIS/stake/delegators/{delegatorAddr}/redelegations",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "unbondingDelegation",
+    "method": "POST",
+    "url": "/chains/v1/IRIS/stake/delegators/{delegatorAddr}/unbonding-delegations",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "getRewardWithdrawalAddressOfDelegator",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/distribution/{delegatorAddr}/withdraw-address",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "getRewards",
+    "method": "GET",
+    "url": "/chains/v1/IRIS/distribution/{address}/rewards",
+    "params": [
+      "address"
+    ]
+  },
+  {
+    "name": "changeRewardWithdrawalAddressOfDelegator",
+    "method": "POST",
+    "url": "/chains/v1/IRIS/distribution/{delegatorAddr}/withdraw-address",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "withdrawRewardsOfDelegator",
+    "method": "POST",
+    "url": "/chains/v1/IRIS/distribution/{delegatorAddr}/rewards/withdraw",
+    "params": [
+      "delegatorAddr"
+    ]
   }
 ]

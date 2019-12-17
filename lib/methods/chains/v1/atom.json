@@ -165,5 +165,123 @@
     "method": "POST",
     "url": "/chains/v1/ATOM/tx/send",
     "params": []
+  },
+  {
+    "name": "delegation",
+    "method": "POST",
+    "url": "/chains/v1/ATOM/stake/delegators/{delegatorAddr}/delegations",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "redelegation",
+    "method": "POST",
+    "url": "/chains/v1/ATOM/stake/delegators/{delegatorAddr}/redelegations",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "unbondingDelegation",
+    "method": "POST",
+    "url": "/chains/v1/ATOM/stake/delegators/{delegatorAddr}/unbonding_delegations",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "getRewardsOfDelegator",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/distribution/delegators/{delegatorAddr}/rewards",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "getRewardsByValidatorOfDelegator",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/distribution/delegators/{delegatorAddr}/rewards/{validatorAddr}",
+    "params": [
+      "delegatorAddr",
+      "validatorAddr"
+    ]
+  },
+  {
+    "name": "getRewardWithdrawalAddressOfDelegator",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/distribution/delegators/{delegatorAddr}/withdraw_address",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "getDistributionInfoOfValidator",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/distribution/validators/{validatorAddr}",
+    "params": [
+      "validatorAddr"
+    ]
+  },
+  {
+    "name": "getOutstandingRewardsOfValidator",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/distribution/validators/{validatorAddr}/outstanding_rewards",
+    "params": [
+      "validatorAddr"
+    ]
+  },
+  {
+    "name": "getRewardsOfValidator",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/distribution/validators/{validatorAddr}/rewards",
+    "params": [
+      "validatorAddr"
+    ]
+  },
+  {
+    "name": "getDistributionCommunityPool",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/distribution/community_pool",
+    "params": []
+  },
+  {
+    "name": "getDistributionParameters",
+    "method": "GET",
+    "url": "/chains/v1/ATOM/distribution/parameters",
+    "params": []
+  },
+  {
+    "name": "withdrawRewardsOfDelegator",
+    "method": "POST",
+    "url": "/chains/v1/ATOM/distribution/delegators/{delegatorAddr}/rewards",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "withdrawRewardsByValidatorOfDelegator",
+    "method": "POST",
+    "url": "/chains/v1/ATOM/distribution/delegators/{delegatorAddr}/rewards/{validatorAddr}",
+    "params": [
+      "delegatorAddr",
+      "validatorAddr"
+    ]
+  },
+  {
+    "name": "changeRewardWithdrawalAddressOfDelegator",
+    "method": "POST",
+    "url": "/chains/v1/ATOM/distribution/delegators/{delegatorAddr}/withdraw_address",
+    "params": [
+      "delegatorAddr"
+    ]
+  },
+  {
+    "name": "withdrawRewardsOfValidator",
+    "method": "POST",
+    "url": "/chains/v1/ATOM/distribution/validators/{validatorAddr}/rewards",
+    "params": [
+      "validatorAddr"
+    ]
   }
 ]
