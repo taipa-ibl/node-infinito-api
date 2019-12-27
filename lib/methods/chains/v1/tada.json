@@ -1,0 +1,64 @@
+[{
+    "name": "getBalance",
+    "method": "GET",
+    "url": "/chains/v1/TADA/addr/{addr}/balance",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "getHistory",
+    "method": "GET",
+    "url": "/chains/v1/TADA/addr/{addr}/txs?offset={offset}&limit={limit}",
+    "params": [
+      "addr",
+      "offset",
+      "limit"
+    ]
+  },
+  {
+    "name": "getUtxo",
+    "method": "GET",
+    "url": "/chains/v1/TADA/addr/{addr}/utxo",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "getNonce",
+    "method": "GET",
+    "url": "/chains/v1/TADA/addr/{addr}/nonce",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "getStakeDistribution",
+    "method": "GET",
+    "url": "/chains/v1/TADA/addr/:addr/stake-distribution",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "sendTransaction",
+    "method": "POST",
+    "url": "/chains/v1/TADA/tx/send",
+    "params": []
+  },
+  {
+    "name": "sendMigrateTransaction",
+    "method": "POST",
+    "url": "/chains/v1/TADA/migrate/{from}/{to}",
+    "params": [
+      "from",
+      "to"
+    ]
+  },
+  {
+    "name": "getBlockChainSetting",
+    "method": "GET",
+    "url": "/chains/v1/TADA/setting",
+    "params": []
+  }
+]

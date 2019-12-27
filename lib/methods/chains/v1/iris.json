@@ -8,7 +8,7 @@
   {
     "name": "getAddressInfo",
     "method": "GET",
-    "url": "/chains/v1/IRIS/{addr}/info",
+    "url": "/chains/v1/IRIS/addr/{addr}/info",
     "params": [
       "addr"
     ]
@@ -215,5 +215,11 @@
     "params": [
       "delegatorAddr"
     ]
+  },
+  {
+    "name": "getFeeRate",
+    "method": "GET",
+    "url": "/chains/v1/feerate/IRIS",
+    "params": []
   }
 ]
