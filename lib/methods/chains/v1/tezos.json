@@ -1,0 +1,55 @@
+[{
+    "name": "getAddressInfo",
+    "method": "GET",
+    "url": "/chains/v1/TEZOS/addr/{addr}",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "getAddressBalance",
+    "method": "GET",
+    "url": "/chains/v1/TEZOS/addr/{addr}/balance",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "getAddressCounter",
+    "method": "GET",
+    "url": "/chains/v1/TEZOS/addr/{addr}/counter",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "getManagerKey",
+    "method": "GET",
+    "url": "/chains/v1/TEZOS/addr/{addr}/manager/key",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "getLatestBlock",
+    "method": "GET",
+    "url": "/chains/v1/TEZOS/block/latest",
+    "params": [
+      "addr"
+    ]
+  },
+  {
+    "name": "getBlockInfo",
+    "method": "GET",
+    "url": "/chains/v1/TEZOS/block/{blockId}",
+    "params": [
+      "blockId"
+    ]
+  },
+  {
+    "name": "sendTransaction",
+    "method": "POST",
+    "url": "/chains/v1/TEZOS/tx/send",
+    "params": []
+  }
+]

@@ -34,7 +34,7 @@
     "method": "GET",
     "url": "/chains/v1/ATOM/tx/{txId}",
     "params": [
-      "txid"
+      "txId"
     ]
   },
   {
