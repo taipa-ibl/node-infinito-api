@@ -82,5 +82,13 @@
     "method": "GET",
     "url": "/chains/v1/feerate/ETH",
     "params": []
+  },
+  {
+    "name": "getTransaction",
+    "method": "GET",
+    "url": "/chains/v1/ETH/tx/{txId}",
+    "params": [
+      "txId"
+    ]
   }
 ]

@@ -139,4 +139,13 @@ describe('api.eth', async() => {
       res.should.have.property('cd');
     });
   });
+
+  // TC9: Get TX
+  describe('#getTransaction', async() => {
+    it('', async() => {
+      let res = await coinAPI.getTransaction(txhash);
+      // console.log(res);
+      res.should.have.property('cd');
+    });
+  });
 });
